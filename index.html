@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Fangjiao Zhang</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 40px;
+        }
+
+        /* Header Section */
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--primary-color);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header-info h2 {
+            margin: 5px 0 0 0;
+            font-size: 1.2em;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .contact-details {
+            text-align: right;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9em;
+        }
+
+        .contact-details a {
+            color: var(--accent-color);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .contact-details i {
+            width: 20px;
+            color: #7f8c8d;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1em;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* List Items */
+        .entry {
+            margin-bottom: 25px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        .entry-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Supervisor Note Style */
+        .supervisor-note {
+            font-size: 0.9em;
+            color: #2c3e50;
+            background-color: #eef2f5;
+            padding: 6px 12px;
+            border-left: 3px solid #2980b9;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+            display: block;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Publications Specific */
+        .publication-item {
+            margin-bottom: 20px;
+        }
+        
+        .pub-title {
+            font-weight: bold;
+        }
+
+        .pub-journal {
+            font-style: italic;
+        }
+
+        .highlight-me {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .tag-pending {
+            background-color: #e2e3e5;
+            color: #383d41;
+            padding: 2px 8px;
+            font-size: 0.8em;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            border: 1px solid #d6d8db;
+            display: inline-block;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .pub-desc {
+            font-size: 0.95em;
+            color: #555;
+            margin-top: 5px;
+            display: block;
+            text-align: justify;
+        }
+
+        /* Print Optimization */
+        @media print {
+            body { background: white; -webkit-print-color-adjust: exact; }
+            .container { margin: 0; padding: 0; width: 100%; max-width: 100%; }
+            a { text-decoration: none; color: black; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-info">
+            <h1>Fangjiao Zhang</h1>
+            <h2>Ph.D. Student in Cyber Security</h2>
+        </div>
+        <div class="contact-details">
+            <a href="mailto:fungizhang@gmail.com"><i class="fas fa-envelope"></i> fungizhang@gmail.com</a>
+            <a href="tel:+8618801083135"><i class="fas fa-phone"></i> (+86) 188-0108-3135</a>
+            <a href="https://github.com/fungizhang" target="_blank"><i class="fab fa-github"></i> github.com/fungizhang</a>
+        </div>
+    </header>
+
+    <section>
+        <h3>Education</h3>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Xidian University</span>
+                <span class="entry-date">Sept. 2025 – Present</span>
+            </div>
+            <div class="entry-subtitle">Ph.D. Student in Cyber Security, School of Cyber Engineering</div>
+            
+            <div class="entry-subtitle" style="margin-bottom: 4px;"><strong>Supervisor: Prof. Bin Wang</strong></div>
+            <div class="supervisor-note">
+                <i class="fas fa-user-tie"></i> <strong>Prof. Wang</strong> is the <strong>Vice President of Hikvision</strong> and a <strong>Changjiang Scholar</strong>.
+            </div>
+
+            <ul>
+                <li><strong>Research Interests:</strong> Trustworthy Federated Learning, Noisy Label Learning, AI Security.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Beijing Electronic Science and Technology Institute (BESTI)</span>
+                <span class="entry-date">2019 – 2022</span>
+            </div>
+            <div class="entry-subtitle">M.Eng. in Computer Technology</div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">China University of Mining and Technology (Beijing)</span>
+                <span class="entry-date">2015 – 2019</span>
+            </div>
+            <div class="entry-subtitle">B.Eng. in Mineral Processing Engineering</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Selected Publications</h3>
+        
+        <div class="publication-item">
+            <span class="pub-title">TNDC: Towards Reliable Label Pre-Correction via MLLM-Assisted Semantic Prototype Construction</span><br>
+            <span class="tag-pending">To be submitted</span><br>
+            <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, et al.</span><br>
+            <span class="pub-journal">To be submitted to IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</span>.
+            <span class="pub-desc">
+                Proposed a novel framework leveraging Multimodal Large Language Models (MLLMs) to construct high-quality semantic prototypes. This method effectively addresses the challenge of label correction in extreme noise scenarios by refining semantic representations.
+            </span>
+        </div>
+
+        <div class="publication-item">
+            <span class="pub-title">EVFeX: An Efficient Vertical Federated XGBoost Algorithm Based on Optimized Secure Matrix Multiplication</span><br>
+            <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, Li Wang, Chang Cui, et al.</span><br>
+            <span class="pub-journal">Signal Processing</span>, Vol 227, 109686, 2025.
+            <span class="pub-desc">
+                Developed a secure XGBoost framework that eliminates time-consuming homomorphic encryption by using optimized secure matrix multiplication. The algorithm achieves security equivalent to encryption while significantly enhancing computational efficiency for large-scale datasets.
+            </span>
+        </div>
+
+        <div class="publication-item">
+            <span class="pub-title">Secure Vertical Federated Learning Based on Feature Disentanglement</span><br>
+            <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, Guoqiang Li, Zhufeng Suo, et al.</span><br>
+            <span class="pub-journal">Signal Processing</span>, Vol 211, 109077, 2023.
+            <span class="pub-desc">
+                Proposed <strong>SVFL</strong>, a vertical federated learning framework inspired by feature disentanglement. It defends against label inference attacks by separating private features from shared representations, thereby reducing privacy leakage risks.
+            </span>
+        </div>
+
+        <div class="publication-item">
+            <span class="pub-title">XMAM: X-Raying Models with a Matrix to Reveal Backdoor Attacks for Federated Learning</span><br>
+            <span class="author-list">Jianyi Zhang*, <span class="highlight-me">Fangjiao Zhang*</span> (Co-first Author), et al.</span><br>
+            <span class="pub-journal">Digital Communications and Networks</span>, 2023.
+            <span class="pub-desc">
+                Designed a novel aggregation method that "X-rays" local model updates using a probing matrix to reveal hidden backdoor patterns in the Softmax layer. This approach effectively identifies and filters out malicious updates from backdoor attackers.
+            </span>
+        </div>
+    </section>
+
+    <section>
+        <h3>Research & Work Experience</h3>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Hangzhou Hikvision Digital Technology Co., Ltd.</span>
+                <span class="entry-date">Nov. 2024 – Aug. 2025</span>
+            </div>
+            <div class="entry-subtitle">Algorithm Engineer Intern | Supervisor: Prof. Bin Wang</div>
+            <ul>
+                <li>Optimized the <strong>Video Content Security Control</strong> algorithms by deploying <strong>Few-Shot Learning</strong> strategies to mitigate data scarcity challenges in complex scenarios.</li>
+                <li>Enhanced model capabilities through rigorous <strong>Large Model (LLM) testing</strong> and performance tuning via advanced <strong>Prompt Engineering</strong> techniques.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Wuhan Tianyu Information Industry Co., Ltd.</span>
+                <span class="entry-date">Nov. 2022 – Aug. 2024</span>
+            </div>
+            <div class="entry-subtitle">Algorithm Engineer</div>
+            <ul>
+                <li>Specialized in the <strong>performance optimization</strong> of Privacy-Preserving Computation architectures, dedicating to mitigating high <strong>computational overhead</strong> and latency in <strong>Vertical Federated Learning</strong>.</li>
+                <li>Engineered and deployed the <strong>EVFeX</strong> algorithm, innovating a <strong>Secure Matrix Multiplication</strong> protocol to replace expensive Homomorphic Encryption, which significantly accelerated secure multi-party modeling.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>Honors & Awards</h3>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">First-Class Academic Scholarship</span>
+                <span class="entry-date">2025</span>
+            </div>
+            <div class="entry-subtitle">Xidian University</div>
+        </div>
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Full Scholarship Ph.D. Offer</span>
+                <span class="entry-date">2022</span>
+            </div>
+            <div class="entry-subtitle">University of Louisiana at Lafayette, USA</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>Programming:</strong> Python, C++, SQL.</li>
+            <li><strong>Frameworks:</strong> PyTorch, TensorFlow, FATE, WeFe.</li>
+            <li><strong>Languages:</strong> Chinese (Native), English (CET 6 & TOEFL 89).</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
