@@ -144,6 +144,19 @@
         .pub-title {
             font-weight: bold;
         }
+        
+        /* Paper Link Style */
+        .pub-title a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s;
+            border-bottom: 1px dashed #bbb; /* 虚线底纹提示可点击 */
+        }
+        
+        .pub-title a:hover {
+            color: #2980b9;
+            border-bottom: 1px solid #2980b9;
+        }
 
         .pub-journal {
             font-style: italic;
@@ -180,6 +193,7 @@
             body { background: white; -webkit-print-color-adjust: exact; }
             .container { margin: 0; padding: 0; width: 100%; max-width: 100%; }
             a { text-decoration: none; color: black; }
+            .pub-title a { border-bottom: none; }
         }
     </style>
 </head>
@@ -239,7 +253,9 @@
         <h3>Selected Publications</h3>
         
         <div class="publication-item">
-            <span class="pub-title">TNDC: Towards Reliable Label Pre-Correction via MLLM-Assisted Semantic Prototype Construction</span><br>
+            <span class="pub-title">
+                TNDC: Towards Reliable Label Pre-Correction via MLLM-Assisted Semantic Prototype Construction
+            </span><br>
             <span class="tag-pending">To be submitted</span><br>
             <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, et al.</span><br>
             <span class="pub-journal">To be submitted to IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</span>.
@@ -249,7 +265,9 @@
         </div>
 
         <div class="publication-item">
-            <span class="pub-title">EVFeX: An Efficient Vertical Federated XGBoost Algorithm Based on Optimized Secure Matrix Multiplication</span><br>
+            <span class="pub-title">
+                <a href="https://doi.org/10.1016/j.sigpro.2024.109686" target="_blank" title="View Article on ScienceDirect">EVFeX: An Efficient Vertical Federated XGBoost Algorithm Based on Optimized Secure Matrix Multiplication</a>
+            </span><br>
             <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, Li Wang, Chang Cui, et al.</span><br>
             <span class="pub-journal">Signal Processing</span>, Vol 227, 109686, 2025.
             <span class="pub-desc">
@@ -258,7 +276,9 @@
         </div>
 
         <div class="publication-item">
-            <span class="pub-title">Secure Vertical Federated Learning Based on Feature Disentanglement</span><br>
+            <span class="pub-title">
+                <a href="https://doi.org/10.1016/j.sigpro.2023.109077" target="_blank" title="View Article on ScienceDirect">Secure Vertical Federated Learning Based on Feature Disentanglement</a>
+            </span><br>
             <span class="author-list"><span class="highlight-me">Fangjiao Zhang</span>, Guoqiang Li, Zhufeng Suo, et al.</span><br>
             <span class="pub-journal">Signal Processing</span>, Vol 211, 109077, 2023.
             <span class="pub-desc">
@@ -267,7 +287,9 @@
         </div>
 
         <div class="publication-item">
-            <span class="pub-title">XMAM: X-Raying Models with a Matrix to Reveal Backdoor Attacks for Federated Learning</span><br>
+            <span class="pub-title">
+                <a href="https://doi.org/10.1016/j.dcan.2023.01.017" target="_blank" title="View Article on ScienceDirect">XMAM: X-Raying Models with a Matrix to Reveal Backdoor Attacks for Federated Learning</a>
+            </span><br>
             <span class="author-list">Jianyi Zhang*, <span class="highlight-me">Fangjiao Zhang*</span> (Co-first Author), et al.</span><br>
             <span class="pub-journal">Digital Communications and Networks</span>, 2023.
             <span class="pub-desc">
